@@ -1,11 +1,13 @@
 <?php
 session_start();
-$host = "localhost";
+// koneksi ke database
+$host = "nozomi.proxy.rlwy.net";
+$port = 49953;
 $user = "root";
-$pass = "";
-$db = "dbangkringan";
-$conn = new mysqli($host, $user, $pass, $db);
+$pass = "LuSeKzpGjWuRjKDqcGEvBOpXLajVrONE";    // sesuaikan
+$db = "railway";
 
+$conn = mysqli_connect($host, $user, $pass, $db, $port);
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }

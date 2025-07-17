@@ -6,8 +6,6 @@ $user = "root";
 $pass = "LuSeKzpGjWuRjKDqcGEvBOpXLajVrONE";    // sesuaikan
 $db = "railway";
 
-
-// mysql://root:LuSeKzpGjWuRjKDqcGEvBOpXLajVrONE@nozomi.proxy.rlwy.net:49953/railway
 $conn = mysqli_connect($host, $user, $pass, $db, $port);
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
