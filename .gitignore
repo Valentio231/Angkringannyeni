@@ -1,0 +1,22 @@
+# Ignore XAMPP/Composer/cache/temp files
+vendor/
+node_modules/
+.env
+*.log
+*.zip
+*.rar
+*.bak
+*.sql
+*.db
+*.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Ignore system files
+.DS_Store
+desktop.ini
+
+# Ignore uploads/temp if applicable
+uploads/
+temp/
