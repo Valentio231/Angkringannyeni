@@ -13,10 +13,6 @@ if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
 
-// Folder upload
-$uploadDir = "uploads/";
-if (!is_dir($uploadDir)) mkdir($uploadDir);
-
 // Tambah menu
 if (isset($_POST['submit_tambah'])) {
     $nama_menu = $conn->real_escape_string($_POST['nama_menu']);
