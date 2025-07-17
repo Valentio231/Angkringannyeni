@@ -22,12 +22,13 @@
 
 <?php
 // Koneksi ke database langsung
-$host = "localhost";
+$host = "nozomi.proxy.rlwy.net";
+$port = 49953;
 $user = "root";
-$pass = "";
-$db = "dbangkringan";
+$pass = "LuSeKzpGjWuRjKDqcGEvBOpXLajVrONE";    // sesuaikan
+$db = "railway";
 
-$conn = new mysqli($host, $user, $pass, $db);
+$conn = mysqli_connect($host, $user, $pass, $db, $port);
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
