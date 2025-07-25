@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 // koneksi ke database
 $host = "nozomi.proxy.rlwy.net";
 $port = 49953;

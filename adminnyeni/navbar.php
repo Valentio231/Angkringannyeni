@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="z-index: 1000;">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php">Angkringan Nyeni</a>
