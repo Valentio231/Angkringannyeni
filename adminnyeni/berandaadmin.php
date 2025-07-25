@@ -87,38 +87,6 @@ $carouselData = $conn->query("SELECT * FROM carousel ORDER BY posisi ASC");
                 </div>
             </div>
 
-            <!-- Tabel Carousel -->
-            <h4 class="mt-4 mb-3">Kelola Carousel</h4>
-            <div class="table-responsive">
-                <table class="table table-bordered align-middle">
-                    <thead class="table-light">
-                        <tr>
-                            <th>Posisi</th>
-                            <th>Judul</th>
-                            <th>Deskripsi</th>
-                            <th>Gambar</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php while ($row = $carouselData->fetch_assoc()): ?>
-                        <tr>
-                            <td><?= htmlspecialchars($row['posisi']) ?></td>
-                            <td><?= htmlspecialchars($row['judul']) ?></td>
-                            <td><?= htmlspecialchars($row['deskripsi']) ?></td>
-                            <td>
-                                <img src="<?= htmlspecialchars($row['gambar']) ?>" alt="<?= htmlspecialchars($row['judul']) ?>" style="max-height: 50px;">
-                            </td>
-                            <td>
-                                <a href="edit_carousel.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-warning">Edit</a>
-                                <a href="hapus_carousel.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin hapus?')">Hapus</a>
-                            </td>
-                        </tr>
-                        <?php endwhile; ?>
-                    </tbody>
-                </table>
-            </div>
-
             <!-- Info tambahan -->
             <div class="text-center mt-5">
                 <p class="text-muted">
